@@ -5,8 +5,19 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <tickTackToe/>
   </div>
 </template>
+
+<script>
+import tickTackToe from "./components/Game.vue";
+
+export default{
+  components:{
+    tickTackToe
+  },
+}
+</script>
 
 <style>
 #app {
